@@ -1,7 +1,7 @@
 {
-  "name": "rn-snippets",
+  "name": "mbrn-snippets",
   "publisher": "MuriloBarbosa",
-  "displayName": "React Native Snippets",
+  "displayName": "React Native Snippets by Murilo Barbosa",
   "description": "Useful React and React Native snippets to speed up development.",
   "icon": "images/icon.png",
   "version": "0.0.1",
