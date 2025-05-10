@@ -1,0 +1,130 @@
+{
+    "React Native Route": {
+    "prefix": "rnr",
+    "body": [
+      "import ${1:ScreenName}Screen from '';",
+      "",
+      "export default function ${1:ScreenName}Route() {",
+      "    return <${1:ScreenName}Screen />;",
+      "}"
+    ],
+    "description": "Cria uma rota de tela em React Native com o padrão de nomenclatura."
+  },
+  "React Native Component Export": {
+    "prefix": "rnc",
+    "body": [
+      "import { View, Text } from 'react-native';",
+      "",
+      "const ${1:NameComponent}Component = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:NameComponent}Component</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:NameComponent}Component;"
+    ],
+    "description": "Cria um componente básico React Native com exportação"
+  },
+  "React Native Component Export with Types": {
+    "prefix": "rncwt",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "interface ${1:NameComponent}Props {",
+      "  name: string;",
+      "}",
+      "",
+      "const ${1:NameComponent}Component: React.FC<${1:NameComponent}Props> = ({ props }) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>{props.name}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:NameComponent}Component;"
+    ],
+    "description": "Cria um componente React Native com tipos TypeScript e props"
+  },
+  "React Native Section Export": {
+    "prefix": "rns",
+    "body": [
+      "import { View, Text } from 'react-native';",
+      "",
+      "const ${1:SectionName}Section = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:SectionName}Section</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:SectionName}Section;"
+    ],
+    "description": "Cria uma Section básica em React Native com exportação"
+  },
+  "React Native Section Export with Types": {
+    "prefix": "rnswt",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "interface ${1:SectionName}SectionProps {",
+      "  title: string;",
+      "} ",
+      "",
+      "const ${1:SectionName}Section: React.FC<${1:SectionName}SectionProps> = ({ props }) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>{props.title}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:SectionName}Section;"
+    ],
+    "description": "Cria uma Section em React Native com tipos TypeScript e props"
+  },
+  "React Native Screen Export": {
+    "prefix": "rnsn",
+    "body": [
+      "import { View, Text } from 'react-native';",
+      "",
+      "const ${1:ScreenName}Screen = () => {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:ScreenName}Screen</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ScreenName}Screen;"
+    ],
+    "description": "Cria um Screen básico em React Native com exportação"
+  },
+  "React Native Screen Export with Types": {
+    "prefix": "rnsnwt",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "interface ${1:ScreenName}ScreenProps {",
+      "  title: string;",
+      "} ",
+      "",
+      "const ${1:ScreenName}Screen: React.FC<${1:ScreenName}ScreenProps> = ({ props }) => {",
+      "  return (",
+      "    <View>",
+      "      <Text>{props.title}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ScreenName}Screen;"
+    ],
+    "description": "Cria um Screen em React Native com tipos TypeScript e props"
+  }
+}

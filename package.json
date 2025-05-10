@@ -1,0 +1,55 @@
+{
+  "name": "rn-snippets",
+  "publisher": "murilobarbosa2002",
+  "displayName": "React Native Snippets",
+  "description": "Useful React and React Native snippets to speed up development.",
+  "icon": "images/icon.png",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murilobarbosa2002/react-rn-snippet-ex.git"
+  },
+  "engines": {
+    "vscode": "1.96.2"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.showSnippets",
+        "title": "Mostrar Snippets",
+        "category": "React Native"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "react-native-snippets",
+          "name": "Snippets",
+          "contextualTitle": "Snippets de React Native"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.8.3",
+    "vscode": "^1.1.37"
+  },
+  "main": "./dist/extension.js",
+  "dependencies": {},
+  "activationEvents": [
+    "onCommand:extension.showSnippets"
+  ]
+}
